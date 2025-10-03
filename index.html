@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio showcasing projects, certificates, conferences, and papers">
+  <title>Mohammad Masud Mia </title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="management_3174200.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Ensure smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Fixed navbar styling */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+    /* Mobile menu hidden by default */
+    #mobile-menu {
+      display: none;
+    }
+    /* Custom hover effect for project cards */
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    /* Social icons styling */
+    .social-icon {
+      transition: transform 0.3s ease;
+    }
+    .social-icon:hover {
+      transform: scale(1.1);
+    }
+    
+  </style>
+</head>
+<body class="bg-gray-100 text-justify font-sans">
+  <!-- Fixed Navigation Bar -->
+  <nav class="navbar bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <span class="text-xl font-bold text-gray-800">Mohammad Masud Mia </span>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="#about" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+          <a href="#research-interests" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Research-interests</a>
+          <a href="#work-journey" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Work Journey</a>
+          <a href="#research-experience" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Research Experience and Publications</a>
+          <a href="#certificates" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Certificates</a>
+          <a href="#extracurricular" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Extracurricular</a>
+          <a href="#connect" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Connect</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-white shadow-md">
+      <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About</a>
+      <a href="#research-interests" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Research-interests</a>
+      <a href="#work-journey" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Work Journey</a>
+      <a href="#research-experience" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Research Experience and Publications</a>
+      <a href="#certificates" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Certificates</a>
+      <a href="#extracurricular" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Extracurricular</a>
+      <a href="#connect" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Connect</a>
+    </div>
+  </nav>
+
+  
+  <!-- Hero Section -->
+  <section class="pt-20 pb-12 bg-gray-800 text-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome</h1>
+      <p class="text-lg md:text-xl mb-6">Assistant Manager, Materials Engineering and Planning Department, Titas Gas Transmission and Distribution PLC.
+        <br> BSC in Materials and Metallurgical Engineering, BUET</p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="#research-experience" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 hover:scale-105 transition-all duration-300 transform">View My Research Experience</a>
+        <a href="./Masud_Mia_CV_draft_nabil_last_review_1_2.pdf" target="_blank" class="inline-block bg-green-600 text-white px-6 py-3 rounded-md font-medium hover:bg-green-700 hover:scale-105 transition-all duration-300 transform">View My CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <img src="./pics/pic.jpg" alt="my-pic" class="w-80 h-100 rounded-lg mb-4 md:mb-0 md:mr-6">
+        <p class="text-justify text-gray-600 text-lg ">
+            <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px; background-color: #f9f9f9; border-radius: 8px; max-width: 800px; margin: 0 auto;">
+                <b>Md Masud Mia</b> is a <b>materials engineer</b> with a <b>Bachelor of Science in Materials and Metallurgical Engineering</b> 
+                from <b>Bangladesh University of Engineering and Technology (BUET)</b>, where he graduated with a <b>CGPA of 3.05/4.0</b>. 
+                A dedicated researcher and practitioner, he excels in <b>computational materials science</b>, particularly 
+                <b>Density Functional Theory (DFT) simulations</b>, and holds expertise in <b>nanoscale characterization techniques</b> 
+                like <b>nano-FTIR and TERS</b>, alongside <b>thin-film deposition methods</b> such as <b>CVD and PVD</b>.<br><br>
+                <b>Md Masud Mia</b> has led <b>material selection and failure analysis</b> for <b>gas transmission pipelines</b> at 
+                <b>Titas Gas Transmission and Distribution PLC</b> since <b>January 2025</b>, ensuring compliance with <b>API, ASTM, and ASME standards</b> 
+                to enhance <b>corrosion resistance and system reliability</b>. His <b>undergraduate thesis</b> utilized <b>DFT+U</b> to investigate <b>
+                    Mo-doped graphene-like ZnO</b>, revealing insights into <b>bandgap modulation</b> for <b>optoelectronic applications</b> like 
+                    <b>LEDs and solar cells</b>. As an author of <b>educational books</b> on <b>Chemistry, Physics, and BCS topics</b>, and 
+                    <b>mentor to over 300 students</b>, his blend of <b>technical prowess and educational passion</b> positions him as a key contributor to advancing 
+                    <b>energy infrastructure and nanotechnology</b>. Currently, he continues to innovate in <b>materials integrity management</b> 
+                    under industry guidance, eager to tackle complex challenges in <b>2D materials and biosensing</b>.
+            </div>
+        </p>
+      </div>
+    </div>
+  </section>
+
+<!-- Research Interests Section -->
+<section id="research-interests" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Research Interests</h2>
+    <div class="bg-gray-50 p-6 rounded-xl shadow-lg">
+      <ul class="space-y-4 text-gray-700 leading-relaxed text-lg">
+        <li>•<b>Design and fabrication of 2D materials and hetero structures</b></li>
+        <li>•<b>Nanolithography and thin-film deposition techniques (CVD, PVD, etc.)</b></li>
+        <li>•<b>Nanoscale heterogeneity in advanced materials (nano-FTIR, TERS etc)</b></li>
+        <li>•<b>Biosensing and Biomaterials</b></li>
+        <li>•<b>Density Functional Theory (DFT)</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+```html
+<!-- Education Section -->
+<section id="education" class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Education</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- BSc Card -->
+      <article class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+        <div class="p-6 relative">
+          <div class="image-text-wrapper relative mb-6">
+            <img src="./pics/bsc-masud.jpeg" alt="BSc Certificate" class="float-left w-32 h-48 object-cover rounded-lg shadow-md mr-4 mb-4 md:mb-0" style="width: 128px; height: 192px; max-width: 128px; height: auto;">
+            <div class="clear-left md:clear-left">
+              <br>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3 clear-both">BSc in Materials and Metallurgical Engineering</h3>
+              <p class="text-gray-600 leading-relaxed text-sm md:text-base mb-4">
+                <span class="font-medium text-gray-900">Result:</span> 3.05/4.00<br>
+                <span class="font-medium text-gray-900">Issued:</span> 05 June, 2022<br>
+                <a href="https://www.buet.ac.bd/web/#/" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors" target="_blank" rel="noopener noreferrer">Bangladesh University of Engineering and Technology (BUET)</a>
+              </p>
+            </div>
+          </div>
+          <a href="./pics/bsc-masud.jpeg" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors group-hover:underline" target="_blank" rel="noopener noreferrer">
+            View Certificate <span class="ml-1">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- HSC Card -->
+      <article class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+        <div class="p-6 relative">
+          <div class="image-text-wrapper relative mb-6">
+            <img src="./pics/hsc-masud.jpeg" alt="HSC Certificate" class="float-left w-32 h-45 object-cover rounded-lg shadow-md mr-4 mb-4 md:mb-0" style="width: 128px; height: 180px; max-width: 128px;">
+            <div class="clear-left md:clear-left">
+              <br>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3 clear-both">Higher Secondary School Certificate</h3>
+              <p class="text-gray-600 leading-relaxed text-sm md:text-base mb-4">
+                <span class="font-medium text-gray-900">Result:</span> 5.00/5.00<br>
+                <span class="font-medium text-gray-900">Issued:</span> 18 August, 2016<br>
+                <a href="https://scpsc.edu.bd/" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors" target="_blank" rel="noopener noreferrer">Savar Cantonment Public School & College</a>
+              </p>
+            </div>
+          </div>
+          <a href="./pics/hsc-masud.jpeg" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors group-hover:underline" target="_blank" rel="noopener noreferrer">
+            View Certificate <span class="ml-1">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- SSC Card -->
+      <article class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+        <div class="p-6 relative">
+          <div class="image-text-wrapper relative mb-6">
+            <img src="./pics/ssc-masud.jpeg" alt="SSC Certificate" class="float-left w-32 h-45 object-cover rounded-lg shadow-md mr-4 mb-4 md:mb-0" style="width: 128px; height: 180px; max-width: 128px;">
+            <div class="clear-left md:clear-left">
+              <br>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3 clear-both">Secondary School Certificate</h3>
+              <p class="text-gray-600 leading-relaxed text-sm md:text-base mb-4">
+                <span class="font-medium text-gray-900">Result:</span> 5.00/5.00<br>
+                <span class="font-medium text-gray-900">Issued:</span> 17 May, 2014<br>
+                <a href="https://stjhscd.com/about/" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors" target="_blank" rel="noopener noreferrer">St. Joseph's High School</a>
+              </p>
+            </div>
+          </div>
+          <a href="./pics/ssc-masud.jpeg" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors group-hover:underline" target="_blank" rel="noopener noreferrer">
+            View Certificate <span class="ml-1">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .clear-left {
+    clear: both;
+  }
+  @media (max-width: 768px) {
+    .float-left {
+      float: none !important;
+      display: block;
+      margin: 0 auto 1rem auto;
+    }
+    .clear-left {
+      clear: none;
+    }
+  }
+</style>
+```
+
+<style>
+  .clear-left {
+    clear: both;
+  }
+  @media (max-width: 768px) {
+    .float-left {
+      float: none !important;
+      display: block;
+      margin: 0 auto 1rem auto;
+    }
+    .clear-left {
+      clear: none;
+    }
+  }
+</style>
+
+<!-- Photo Work Section with Text Wrapping -->
+<section id="work-journey" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">My Work Journey</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  
+        <!-- Work Item 2 -->
+        <article class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="image-text-wrapper relative"> <!-- Wrapper for float clearing -->
+            <img src="./pics/work/work-2.jpeg" alt="Visit to Gazipur Town Bordering Station, Titas Gas" class="float-left md:float-left w-full md:w-48 md:h-48 object-cover rounded-lg shadow-md mr-4 md:mb-4 max-w-none" style="width: 100%; height: auto; max-width: 300px;">
+            <div class="md:clear-left"> <!-- Clears float on medium+ screens -->
+              <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-2 py-1 rounded-full mb-3">
+                March 2025 – Present
+              </span>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Visited the Gazipur Town Bordering Station, Titas Gas Transmission and Distribution PLC</h3>
+              <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                As part of training attachment, visited the site and gathered detailed knowledge on gas collection from GTCL and distribution processes to customers of TGTDPLC. This hands-on experience deepened my understanding of pipeline materials in real-world energy infrastructure, aligning with my expertise in corrosion resistance and failure analysis.
+              </p>
+            </div>
+          </div>
+          <a href="./pics/work/work-2.jpeg" class="text-blue-600 hover:text-blue-800 font-medium transition-colors block mt-4" target="_blank" rel="noopener noreferrer">View Full Image →</a>
+        </article>
+
+        <!-- Work Item 3 -->
+        <article class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="image-text-wrapper relative"> <!-- Wrapper for float clearing -->
+              <img src="./pics/work/work-3.jpeg" alt="Visit to Gazipur Town Bordering Station, Titas Gas" class="float-left md:float-left w-full md:w-48 md:h-48 object-cover rounded-lg shadow-md mr-4 md:mb-4 max-w-none" style="width: 100%; height: auto; max-width: 300px;">
+              <div class="md:clear-left"> <!-- Clears float on medium+ screens -->
+                <span class="inline-block bg-violet-100 text-violet-800 text-sm font-medium px-2 py-1 rounded-full mb-3">
+                    Attended as the Assistant Manager
+                </span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Discussion on Gas Meter Development.</h3>
+                <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                    Gained brief idea on how  Gas Pilferage can be suppressed by different types of Gas meter upgradation and use of Electronic Volume Corrector.
+                </p>
+              </div>
+            </div>
+            <a href="./pics/work/work-3.jpeg" class="text-blue-600 hover:text-blue-800 font-medium transition-colors block mt-4" target="_blank" rel="noopener noreferrer">View Full Image →</a>
+          </article>
+  
+           <!-- Work Item 4 -->
+        <article class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="image-text-wrapper relative"> <!-- Wrapper for float clearing -->
+              <img src="./pics/work/work-4.jpeg" alt="Visit to Gazipur Town Bordering Station, Titas Gas" class="float-left md:float-left w-full md:w-48 md:h-48 object-cover rounded-lg shadow-md mr-4 md:mb-4 max-w-none" style="width: 100%; height: auto; max-width: 300px;">
+              <div class="md:clear-left"> <!-- Clears float on medium+ screens -->
+                <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-2 py-1 rounded-full mb-3">
+                    Part of Assistant Manager Training Program
+                </span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Visited The Demra Town Bordering Station, Titas Gas Transmission and Distribution PLC</h3>
+                <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                    As a part of RMS Fabrication, Installation, Maintenance and EVC Meter Installation and Operation training program earned knowledge of Gas Production, Metering and Distribution.
+                </p>
+              </div>
+            </div>
+            <a href="./pics/work/work-4.jpeg" class="text-blue-600 hover:text-blue-800 font-medium transition-colors block mt-4" target="_blank" rel="noopener noreferrer">View Full Image →</a>
+          </article>
+
+          <!-- Work Item 1 -->
+        <article class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="image-text-wrapper relative"> <!-- Wrapper for float clearing -->
+              <img src="./pics/work/work-1.jpeg" alt="Onboarding Ceremony at Rhombus Publication" class="float-left md:float-left w-full md:w-48 md:h-48 object-cover rounded-lg shadow-md mr-4 md:mb-4 max-w-none" style="width: 100%; height: auto; max-width: 300px;">
+              <div class="md:clear-left"> <!-- Clears float on medium+ screens -->
+                <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-2 py-1 rounded-full mb-3">
+                  October 2024 – March 2025
+                </span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Onboarding Ceremony of Rhombus Publication</h3>
+                <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                  Joined Rhombus Publications as Content Executive in the Chemistry Department. 
+                  <br><br>Worked on FRB (Fast Revision Batch), Cycle, BUET, and DU admission preparation books. 
+                  <br><br>Published 5 books for university admission preparation. This role honed my skills in content creation and educational material development, blending my passion for materials science with teaching.
+                </p>
+              </div>
+            </div>
+            <a href="./pics/work/work-1.jpeg" class="text-blue-600 hover:text-blue-800 font-medium transition-colors block mt-4" target="_blank" rel="noopener noreferrer">View Full Image →</a>
+          </article>
+
+          <!-- Work Item 5 -->
+        <article class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <!-- <div class="image-text-wrapper relative"> Wrapper for float clearing -->
+            <div class="md:clear-left"> <!-- Clears float on medium+ screens -->
+                <span class="inline-block bg-pink-100 text-pink-800 text-sm font-medium px-2 py-1 rounded-full mb-3">
+                  From 2016 - present
+                </span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Tutoring</h3>
+                <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                    Years of Experience: 8+ years of dedicated private tutoring.
+                    <br><br>
+                    Expertise: Specializing in Higher Secondary Certificate (HSC) and University Admission Preparation for Chemistry.
+                    <br><br>
+                    Student Reach: Successfully mentored over 100 students for competitive exams and academic excellence.
+                    <br><br>
+                    Institutional Experience: Formerly an instructor at MI Academy in Mirpur-1, providing structured coaching and rigorous academic training.
+                </p>
+              </div>
+            <!-- </div> -->
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Research Experience Section -->
+  <section id="research-experience" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Research Experience and Publications</h2>
+      <div class="space-y-8">
+        
+        <!-- Assistant Manager -->
+        <article class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 lg:mb-0"><b>Assistant Manager, Materials Engineering and Planning Department</b></h3>
+            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+              <b>Jan. 2025 – Present</b>
+            </span>
+          </div>
+          <p class="text-gray-600 mb-4 italic"><b>Titas Gas Transmission and Distribution PLC, Dhaka, Bangladesh</b></p>
+          <ul class="space-y-3 text-gray-700 leading-relaxed">
+            <li>• <b>Presided over the selection and evaluation</b> of the right materials for <b>gas transmission and distribution pipelines</b>, and planned the sourcing of these materials. Additionally ensured all choices comply with the recognized standards such as <b>API, ASTM and ASME</b>, which helped with making the system <b>stronger, more resistant to corrosion, and reliable under high pressure</b>.</li>
+            <li>• <b>Conducted detailed failure analysis and root cause investigations</b> on pipeline materials exposed to <b>harsh and demanding environments</b>, such as <b>hydrogen sulfide and carbon dioxide corrosion</b>, applying <b>cutting-edge approaches</b> namely <b>metallography, hardness testing, and non-destructive testing (NDT) techniques</b> to prevent or mitigate future risks and <b>extend asset life</b>.</li>
+            <li>• <b>Designed and implemented materials engineering strategies</b> to support <b>pipeline integrity management</b>, incorporating <b>risk assessments, life-cycle cost evaluations, and predictive maintenance models</b>. These efforts <b>optimized resource allocation and minimized downtime</b> in key energy infrastructure.</li>
+            <li>• <b>Drafted comprehensive technical reports, specifications, and presentations</b> for stakeholders that included <b>regulatory authorities and senior management</b>, highlighting the <b>strong communication skills</b> in translating <b>complex materials science concepts into practical insights</b> for decision-making.</li>
+          </ul>
+        </article>
+  
+        <!-- Undergraduate Thesis -->
+        <article class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 lg:mb-0"><b>Undergraduate Thesis</b></h3>
+            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+              <b>Dec. 2021 – May 2022</b>
+            </span>
+          </div>
+          <p class="text-lg font-medium text-gray-900 mb-4 italic"><b>Title: Theoretical Investigation of Structural, Electronic and Optical Properties of Graphene-like ZnO with Mo Doping: A DFT+U Study</b></p>
+          <ul class="space-y-3 text-gray-700 leading-relaxed">
+            <li>• <b>Performed detailed analysis</b> of structural and electronic properties of <b>Mo-doped graphene-like ZnO (g-ZnO)</b> using <b>Density Functional Theory with Hubbard U correction (DFT+U)</b>, evaluating <b>lattice stability, bond lengths, and formation energies</b> to assess the impact of doping on <b>material integrity and potential for semiconductor applications</b>.</li>
+            <li>• <b>Investigated electronic band structures, density of states (DOS), and bandgap modulation</b> induced by <b>Mo doping</b> reveal mechanisms for tuning <b>electrical conductivity and carrier mobility</b>, which are critical for the advancement of <b>optoelectronic devices such as LEDs and solar cells</b>.</li>
+            <li>• The <b>optical properties explored</b> including <b>UV absorption spectra, dielectric functions, optical conductivity, and refractive index variations</b> demonstrating <b>enhanced photoelectric response</b> and potential applications in <b>photovoltaic and sensor technologies</b> through computational simulations.</li>
+            <li>• <b>Using advanced software tools such as Quantum ESPRESSO or VASP</b> for <b>ab initio calculations</b>, interpreting results to provide insights into <b>dopant-site preferences</b> and their effects on <b>magnetic and optical behaviors</b>, contributing to the <b>theoretical foundation for novel 2D materials in nanotechnology</b>.</li>
+          </ul>
+        </article>
+  
+        <!-- Industrial Trainee -->
+        <article class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 lg:mb-0"><b>Industrial Trainee</b></h3>
+            <span class="inline-block bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">
+              <b>Dec. 2021 – Jan. 2022</b>
+            </span>
+          </div>
+          <p class="text-gray-600 mb-4 italic"><b>GPH Ispat, Chattogram, Bangladesh</b></p>
+          <ul class="space-y-3 text-gray-700 leading-relaxed">
+            <li>• <b>Conducted field surveys</b> across all stages of the <b>steel-making process</b>, with a focus on understanding <b>operational issues</b>.</li>
+            <li>• <b>Developed skills</b> in <b>communication, presentation, and technical report writing</b> with teams and effectively <b>documenting industrial processes</b>.</li>
+          </ul>
+        </article>
+      </div>
+  
+      <!-- Publications Subsection -->
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center"><b>Publications</b></h3>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-lg">
+          <ol class="space-y-3 text-gray-700 leading-relaxed list-decimal list-inside">
+            <li><b>Lead author</b> for <b>five books</b> on <b>Higher Secondary School Certificate (HSC)-level admission and academic Chemistry and Physics</b>. <b>Rhombus Publications, 2024 – Present</b>.</li>
+            <li><b>Author</b> of books on topics related to <b>Bangladesh Civil Service (BCS)</b> in <b>mathematics and science</b>. <b>Lekhok Publications, 2023 – Present</b>.</li>
+            <li><b>Contributor</b> to <b>Chemistry textbooks and resources</b> and <b>Higher Secondary School Certificate (HSC)-level curricula</b>. <b>Panjeree Publications, 2025 – Present</b>.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Professional Certificates</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Repeat for more certificates 1 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+        <div class="flex items-center mb-2">
+          <h3 class="text-xl font-semibold text-gray-800 flex-1">Short Foundation Training(Technical)</h3>
+          <img src="./pics/certificate/cert-1.jpeg" alt="Certificate Thumbnail" class="w-50 h-40 object-cover rounded-md ml-4">
+        </div>
+        <p class="text-gray-600 mb-4">
+          Assistant Manager
+          <br>Titas Gas Transmission and Distribution PLC, July 05,2025</p>
+        <a href="./pics/certificate/cert-1.jpeg" class="text-blue-600 hover:underline">View Certificate</a>
+      </div>
+
+      <!-- Repeat for more certificates 2 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+        <div class="flex items-center mb-2">
+          <h3 class="text-xl font-semibold text-gray-800 flex-1">Industrial Attachment with GPH</h3>
+          <img src="./pics/certificate/cert-2.jpeg" alt="Certificate Thumbnail" class="w-50 h-40 object-cover rounded-md ml-4">
+        </div>
+        <p class="text-gray-600 mb-4">Trainee, January 05,2022</p>
+        <a href="./pics/certificate/cert-2.jpeg" class="text-blue-600 hover:underline">View Certificate</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Extracurricular Section -->
+<section id="extracurricular" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Extracurricular</h2>
+    <div class="space-y-8">
+      
+      <!-- Executive Role -->
+      <article class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2 lg:mb-0"><b>Executive</b></h3>
+          <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+            <b>Jun. 2019 – May 2022</b>
+          </span>
+        </div>
+        <p class="text-gray-600 mb-4 italic"><b>Alokbortika, Bangladesh University of Engineering and Technology</b> (like an Open Library)</p>
+        <ul class="space-y-3 text-gray-700 leading-relaxed">
+          <li>• <b>Organized community events</b>, <b>oversaw book archives</b> and <b>facilitated study circles</b> to promote <b>literacy and collaborative learning</b> among <b>students and local residents</b>.</li>
+        </ul>
+      </article>
+
+      <!-- Sports Achievements -->
+      <article class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2 lg:mb-0"><b>Sports: Cricket and Badminton</b></h3>
+        </div>
+        <ul class="space-y-3 text-gray-700 leading-relaxed">
+          <li>• <b>July 2018</b> - <b>Champion on Inter-Hall Badminton Tournament</b>.</li>
+          <li>• <b>December 2018</b> - <b>Inter-Department Cricket Champion</b>.</li>
+          <li>• <b>August 2023</b> - <b>Champion of Bangabandhu Memorial Cricket League, Savar</b>.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+  <!-- Connect Section with Social Icons -->
+  <section id="connect" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Connect With Me</h2>
+      <div class="flex justify-center space-x-8 md:space-x-12">
+
+        <!-- <a href="https://linkedin.com/in/jubayer-ahmed-sajid-5205a3336" target="_blank" class="social-icon">
+          <svg class="w-16 h-16 text-blue-600 hover:text-blue-800" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-1.337-.028-3.06-1.867-3.06-1.867 0-2.152 1.459-2.152 2.966v5.698h-3v-11h2.883v1.509h.041c.402-.764 1.386-1.567 2.851-1.567 3.048 0 3.61 2.006 3.61 4.616v6.442z"/>
+          </svg>
+        </a> -->
+
+        <a href="imasud1611@gmail.com" class="social-icon">
+          <svg class="w-16 h-16 text-blue-600 hover:text-blue-800" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
+          </svg>
+        </a>
+
+        <!-- <a href="https://x.com/your-profile" target="_blank" class="social-icon">
+          <svg class="w-16 h-16 text-blue-600 hover:text-blue-800" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p>&copy; 2025 Mohammad Masud Mia. All rights reserved.</p>
+      <p>Mobile : +8801784125558</p>
+      <p>Email : imasud1611@gmail.com</p>
+      <br>
+    <div class="text-center text-gray-400 mt-2">
+      <p>
+        © Website created by <a href="https://www.linkedin.com/in/md-khalid-hasan-nabil-01541mon1/" class="text-blue-300 hover:underline" >Khalid Hasan</a>
+      </p>
+    </div>   
+    
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Close mobile menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
