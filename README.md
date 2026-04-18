@@ -10,13 +10,11 @@ As a CS Master's applicant, this project showcases my skills in HTML/CSS (float 
 
 - **Responsive Cards**: Education/certificates with image-text wrap; fits Galaxy A51/A71 screens.
 - **Animations**: Hover lifts/shadows on research cards.
-- **Sections**: Research Experience, Interests (2D materials/DFT), Publications, Extracurriculars (Alokbortika exec, cricket champ), Skills (AutoCAD/VASP).
+- **Sections**: Research Experience, Interests (2D materials/DFT), Publications, Extracurriculars (Alokbortika exec, cricket champ)
 - **Tech**: Pure HTML/CSS; semantic, accessible.
 
-## Setup
+Website Link:
 
-1. `git clone https://github.com/yourusername/masud-mia-portfolio.git`
-2. Open `index.html` in browser.
-3. Deploy: Link to Netlify/GitHub Pages.
+https://not-your-pancake.github.io/masud-portfolio-web/
 
 *Built Oct 04, 2025. #WebDev #Portfolio #MaterialsEngineering #MastersApp*
